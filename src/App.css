@@ -1,9 +1,9 @@
-#root {
+/*#root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-}
+}*/
 
 .logo {
   height: 6em;
@@ -39,4 +39,83 @@
 
 .read-the-docs {
   color: #888;
+}
+
+.music-list, .playlist {
+  margin-top: 20px;
+}
+
+.controls button {
+  width: 40px;
+  height: 40px;
+}
+
+.volume-control {
+  margin-top: 10px;
+}
+
+.app-container {
+  background: linear-gradient(135deg, #00c9ff 0%, #92fe9d 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+}
+
+.music-list ul {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+  border: none;
+  color: white;
+  transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #38f9d7 0%, #43e97b 100%);
+}
+
+.category-list ul {
+  display: inline-flex;
+  padding: 0;
+}
+
+.category-list li {
+  margin: 0 10px;
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #9be15d 0%, #00e3ae 100%);
+  border-radius: 25px;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.category-list li:hover, .category-list .active {
+  background: linear-gradient(135deg, #00e3ae 0%, #9be15d 100%);
+}
+
+.player {
+  background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+  padding: 20px;
+  border-radius: 15px;
+  color: white;
+}
+
+h1 {
+  color: #28a745; 
+  font-weight: bold;
+  margin-bottom: 20px;
 }
