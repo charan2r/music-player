@@ -4,8 +4,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const MusicList = ({ searchTerm, category, onTrackSelect }) => {
   const musicData = [
-    { title: 'Song 1', genre: 'Pop', src: 'assets/song1.mp3' },
-    { title: 'Song 2', genre: 'Rock', src: 'song2.mp3' },
+    { title: 'In the End by Linkin Park', genre: 'Pop', src: '/assets/song1.mp3' },
+    { title: 'Radioactive by Imagine Dragons', genre: 'Rock', src: 'song2.mp3' },
     // Add more songs here
   ];
 
@@ -22,7 +22,7 @@ const MusicList = ({ searchTerm, category, onTrackSelect }) => {
           <li 
             key={index} 
             className="list-group-item d-flex justify-content-between align-items-center w-50">
-            <span>{track.title}</span>
+            <span className="font-weight-bold text-primary">{track.title}</span>
             <button className="btn btn-primary" onClick={() => onTrackSelect(track)}>
               Play
             </button>

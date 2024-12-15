@@ -10,9 +10,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const App = () => {
   const [currentTrack, setCurrentTrack] = useState(null);
   const [playlist, setPlaylist] = useState([
-    { id: 1, title: "Song 1", artist: "Artist 1" },
-    { id: 2, title: "Song 2", artist: "Artist 2" },
-    { id: 3, title: "Song 3", artist: "Artist 3" },
+    { id: 1, title: "In the End by Linkin Park" },
+    { id: 2, title: "Radioactive by Imagine Dragons" },
+    // Add more songs here
   ]);
   const [searchTerm, setSearchTerm] = useState('');
   const [category, setCategory] = useState('All');
@@ -31,7 +31,7 @@ const App = () => {
         {/* Add Music Player Title */}
         <div className="row">
           <div className="col-md-12 text-center">
-            <h1 className="display-4">Music Player</h1> 
+            <h1 className="font-weight-bold">Music Player</h1> 
           </div>
         </div>
 
